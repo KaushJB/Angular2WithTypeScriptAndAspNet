@@ -1,0 +1,22 @@
+﻿<div id="appComponent">
+    <h1>Kaush's First Angular App</h1>
+    <h2>Hero List</h2>
+    <div *ngIf="hero">
+        <!--<h3>{{title}}</h3><h4>{{hero}} details!</h4>-->
+        <h3>{{title}}</h3>
+        <h4>{{hero.name}} details!</h4>
+        <div><label>id: </label>{{hero.id}}</div>
+        <div>
+            <label>name: </label>
+            <input [(ngModel)]="hero.name" placeholder="name">
+        </div>
+    </div>
+
+    <h2>My Heroes</h2> 
+    <ul class="heroes">
+        <li *ngFor="let h of heroes" (click)="onSelect(h)" [class.selected]="h === hero">
+            <span class="badge">{{h.id}}</span> {{h.name}}
+        </li>
+    </ul>
+
+</div>
