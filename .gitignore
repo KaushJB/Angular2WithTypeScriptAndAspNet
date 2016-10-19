@@ -10,4 +10,7 @@
 /WebApplication1/obj
 /WebApplication1/typings
 /AngularSample/bin
-/AngularSample/obj/Debug
+/AngularSample/libs
+/AngularSample/node_modules
+/AngularSample/obj
+/AngularSample/typings
